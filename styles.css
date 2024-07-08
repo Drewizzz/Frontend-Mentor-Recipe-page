@@ -45,7 +45,8 @@ hr {
 }
 
 
-.about, p{
+.about,
+p {
     color: var(--WengeBrown);
     padding: 0 25px 10px 25px;
     font-size: 14px;
@@ -135,7 +136,7 @@ hr {
     font-weight: 600;
 }
 
-.nutrition{
+.nutrition {
     display: flex;
     justify-content: space-between;
     width: 60%;
@@ -143,11 +144,32 @@ hr {
     font-family: var(--outfit);
     padding: 10px 0;
 }
+
 .name {
     color: var(--WengeBrown);
 }
-.amount{
+
+.amount {
     color: var(--Nutmeg);
     font-weight: 600;
     text-align: right;
+}
+
+@media (min-width: 1024px) {
+    body{
+        background-color: var(--Eggshell);
+    }
+    main {
+        width: 30%;
+        margin: 30px auto;
+        padding: 30px;
+        border-radius: 10px;
+        background-color: var(--White);
+    }
+    img{
+        border-radius: 10px;
+    }
+    .space-left {
+        margin-left: 0;
+    }
 }
