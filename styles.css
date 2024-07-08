@@ -8,23 +8,146 @@
     --Eggshell: hsl(30, 54%, 90%);
     --LightGrey: hsl(30, 18%, 87%);
     --WengeBrown: hsl(30, 10%, 34%);
-    --DarkCharcoal: hsl(24, 5%, 18%)
+    --DarkCharcoal: hsl(24, 5%, 18%);
+    /*--Fonts--*/
+    --outfit: 'outfit';
+    --serif: 'young serif';
 }
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'young serif';
 }
 
 img {
     width: 100%;
 }
-h1{
+
+h1 {
     color: var(--DarkCharcoal);
     text-align: left;
     margin: 0 auto;
-    padding:20px 0 20px 20px;
+    padding: 25px 0 25px 25px;
     line-height: 1;
+    font-family: var(--serif);
+}
+
+h2 {
+    color: var(--Nutmeg);
+    font-family: var(--serif);
+    margin-left: 27px;
+}
+
+hr {
+    width: 85%;
+    margin: 0 auto;
+}
+
+
+.about, p{
+    color: var(--WengeBrown);
+    padding: 0 25px 10px 25px;
+    font-size: 14px;
+    font-family: var(--outfit);
+}
+
+.preparation {
+    padding: 30px;
+    background-color: var(--RoseWhite);
+    width: 85%;
+    margin: 0 auto;
+    position: relative;
+    font-size: 14px;
+    font-family: var(--outfit);
+    border-radius: 10px;
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+
+.preparation-title {
+    position: absolute;
+    top: 1px;
+    left: 20px;
+    padding-top: 15px;
+    color: var(--DarkRaspberry);
+}
+
+.preparation ul {
+    margin: 20px 0 0 15px;
+    color: var(--WengeBrown);
+}
+
+.preparation li {
+    margin-top: 8px;
+}
+
+.preparation li::marker {
+    color: var(--DarkRaspberry);
+}
+
+.space-left {
+    margin-left: 15px;
+}
+
+.ingredients {
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+.ingredients ul {
+    padding: 0 25px 10px 50px;
+}
+
+.ingredients li {
+    margin-top: 8px;
+    font-family: var(--outfit);
+    color: var(--WengeBrown);
+}
+
+.ingredients li::marker {
+    color: var(--Nutmeg);
+}
+
+.instructions {
+    font-family: var(--outfit);
+    color: var(--WengeBrown);
+    display: flex;
+    padding: 0 30px;
+    margin-top: 15px;
+    margin-bottom: 25px;
+}
+
+.list-number {
+    width: 10%;
+}
+
+.to-do {
+    width: 90%;
+}
+
+.no-list {
+    color: var(--Nutmeg);
+    font-weight: 700;
+}
+
+.way-to-do {
+    font-weight: 600;
+}
+
+.nutrition{
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    margin: 0 auto;
+    font-family: var(--outfit);
+    padding: 10px 0;
+}
+.name {
+    color: var(--WengeBrown);
+}
+.amount{
+    color: var(--Nutmeg);
+    font-weight: 600;
+    text-align: right;
 }
